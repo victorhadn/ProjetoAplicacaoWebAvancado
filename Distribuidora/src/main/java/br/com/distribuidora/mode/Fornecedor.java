@@ -21,10 +21,13 @@ import lombok.Data;
 	public class Fornecedor {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 	private String nome;
 	private String cnpj;
 	private String email;
 	private String telefone;
+		
+	public Long getID() { return id;}
 	public String getNome() {
 		return nome;
 	}
