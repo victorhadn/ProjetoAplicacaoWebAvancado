@@ -26,6 +26,9 @@ public class Endereco {
 	private String rua;
 	private String bairro;
 	private String cidade;
+	
+	public Long getID() { return id;}
+	
 	public String getBairro() {
 		return bairro;
 	}
