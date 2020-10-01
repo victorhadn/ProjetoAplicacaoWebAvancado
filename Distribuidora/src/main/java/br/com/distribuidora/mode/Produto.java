@@ -21,8 +21,8 @@ import lombok.Data;
 	public class Produto {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+        private Long codigo;
 	private String nome;
-	private int codigo;
 	private double preço;
 	/**
 	 * @return the nome
@@ -39,13 +39,13 @@ import lombok.Data;
 	/**
 	 * @return the codigo
 	 */
-	public int getCodigo() {
+	public Long getCodigo() {
 		return codigo;
 	}
 	/**
 	 * @param codigo the codigo to set
 	 */
-	public void setCodigo(int codigo) {
+	public void setCodigo(Long codigo) {
 		this.codigo = codigo;
 	}
 	/**
