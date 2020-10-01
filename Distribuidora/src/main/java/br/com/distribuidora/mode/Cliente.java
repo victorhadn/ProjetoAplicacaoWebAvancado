@@ -27,6 +27,9 @@ public class Cliente {
 	private String email;
 	private String cpf;
 	private String telefone;
+	
+	public Long getID() { return id;}
+	
 	public String getTelefone() {
 		return telefone;
 	}
